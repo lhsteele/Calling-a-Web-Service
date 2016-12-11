@@ -14,6 +14,12 @@
 		EF42EF751DFA1AB9001A70BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF42EF731DFA1AB9001A70BA /* LaunchScreen.storyboard */; };
 		EF42EF801DFA1ABA001A70BA /* Web_Service_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42EF7F1DFA1ABA001A70BA /* Web_Service_ExampleTests.swift */; };
 		EF42EF8B1DFA1ABA001A70BA /* Web_Service_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42EF8A1DFA1ABA001A70BA /* Web_Service_ExampleUITests.swift */; };
+		EF42EFA61DFD0D91001A70BA /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF42EF9A1DFD0D91001A70BA /* AFHTTPSessionManager.m */; };
+		EF42EFA71DFD0D91001A70BA /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF42EF9D1DFD0D91001A70BA /* AFNetworkReachabilityManager.m */; };
+		EF42EFA81DFD0D91001A70BA /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF42EF9F1DFD0D91001A70BA /* AFSecurityPolicy.m */; };
+		EF42EFA91DFD0D91001A70BA /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = EF42EFA11DFD0D91001A70BA /* AFURLRequestSerialization.m */; };
+		EF42EFAA1DFD0D91001A70BA /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = EF42EFA31DFD0D91001A70BA /* AFURLResponseSerialization.m */; };
+		EF42EFAB1DFD0D91001A70BA /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF42EFA51DFD0D91001A70BA /* AFURLSessionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,20 @@
 		EF42EF861DFA1ABA001A70BA /* Web Service ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Web Service ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF42EF8A1DFA1ABA001A70BA /* Web_Service_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web_Service_ExampleUITests.swift; sourceTree = "<group>"; };
 		EF42EF8C1DFA1ABA001A70BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF42EF991DFD0D91001A70BA /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		EF42EF9A1DFD0D91001A70BA /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		EF42EF9B1DFD0D91001A70BA /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		EF42EF9C1DFD0D91001A70BA /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		EF42EF9D1DFD0D91001A70BA /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		EF42EF9E1DFD0D91001A70BA /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		EF42EF9F1DFD0D91001A70BA /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		EF42EFA01DFD0D91001A70BA /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		EF42EFA11DFD0D91001A70BA /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		EF42EFA21DFD0D91001A70BA /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		EF42EFA31DFD0D91001A70BA /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		EF42EFA41DFD0D91001A70BA /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		EF42EFA51DFD0D91001A70BA /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		EF42EFAC1DFD0F77001A70BA /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +97,12 @@
 		EF42EF5E1DFA1AB9001A70BA = {
 			isa = PBXGroup;
 			children = (
+				EF42EFAC1DFD0F77001A70BA /* bridge.h */,
 				EF42EF691DFA1AB9001A70BA /* Web Service Example */,
 				EF42EF7E1DFA1ABA001A70BA /* Web Service ExampleTests */,
 				EF42EF891DFA1ABA001A70BA /* Web Service ExampleUITests */,
 				EF42EF681DFA1AB9001A70BA /* Products */,
+				EF42EF981DFD0D91001A70BA /* AFNetworking */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +145,26 @@
 				EF42EF8C1DFA1ABA001A70BA /* Info.plist */,
 			);
 			path = "Web Service ExampleUITests";
+			sourceTree = "<group>";
+		};
+		EF42EF981DFD0D91001A70BA /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				EF42EF991DFD0D91001A70BA /* AFHTTPSessionManager.h */,
+				EF42EF9A1DFD0D91001A70BA /* AFHTTPSessionManager.m */,
+				EF42EF9B1DFD0D91001A70BA /* AFNetworking.h */,
+				EF42EF9C1DFD0D91001A70BA /* AFNetworkReachabilityManager.h */,
+				EF42EF9D1DFD0D91001A70BA /* AFNetworkReachabilityManager.m */,
+				EF42EF9E1DFD0D91001A70BA /* AFSecurityPolicy.h */,
+				EF42EF9F1DFD0D91001A70BA /* AFSecurityPolicy.m */,
+				EF42EFA01DFD0D91001A70BA /* AFURLRequestSerialization.h */,
+				EF42EFA11DFD0D91001A70BA /* AFURLRequestSerialization.m */,
+				EF42EFA21DFD0D91001A70BA /* AFURLResponseSerialization.h */,
+				EF42EFA31DFD0D91001A70BA /* AFURLResponseSerialization.m */,
+				EF42EFA41DFD0D91001A70BA /* AFURLSessionManager.h */,
+				EF42EFA51DFD0D91001A70BA /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF42EFA61DFD0D91001A70BA /* AFHTTPSessionManager.m in Sources */,
+				EF42EFAB1DFD0D91001A70BA /* AFURLSessionManager.m in Sources */,
+				EF42EFA81DFD0D91001A70BA /* AFSecurityPolicy.m in Sources */,
 				EF42EF6D1DFA1AB9001A70BA /* ViewController.swift in Sources */,
+				EF42EFA91DFD0D91001A70BA /* AFURLRequestSerialization.m in Sources */,
+				EF42EFA71DFD0D91001A70BA /* AFNetworkReachabilityManager.m in Sources */,
+				EF42EFAA1DFD0D91001A70BA /* AFURLResponseSerialization.m in Sources */,
 				EF42EF6B1DFA1AB9001A70BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,10 +460,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Web Service Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LisaSteele.Web-Service-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = bridge.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -424,10 +474,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Web Service Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LisaSteele.Web-Service-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = bridge.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
