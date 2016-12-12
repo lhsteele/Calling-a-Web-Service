@@ -66,7 +66,7 @@
 		EF42EFA31DFD0D91001A70BA /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		EF42EFA41DFD0D91001A70BA /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		EF42EFA51DFD0D91001A70BA /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		EF42EFAC1DFD0F77001A70BA /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
+		EF72BDFC1DFF5C05009E38EC /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 		EF42EF5E1DFA1AB9001A70BA = {
 			isa = PBXGroup;
 			children = (
-				EF42EFAC1DFD0F77001A70BA /* bridge.h */,
+				EF72BDFC1DFF5C05009E38EC /* bridge.h */,
 				EF42EF691DFA1AB9001A70BA /* Web Service Example */,
 				EF42EF7E1DFA1ABA001A70BA /* Web Service ExampleTests */,
 				EF42EF891DFA1ABA001A70BA /* Web Service ExampleUITests */,
@@ -557,6 +557,7 @@
 				EF42EF911DFA1ABA001A70BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF42EF921DFA1ABA001A70BA /* Build configuration list for PBXNativeTarget "Web Service ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +566,7 @@
 				EF42EF941DFA1ABA001A70BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF42EF951DFA1ABA001A70BA /* Build configuration list for PBXNativeTarget "Web Service ExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -573,6 +575,7 @@
 				EF42EF971DFA1ABA001A70BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
