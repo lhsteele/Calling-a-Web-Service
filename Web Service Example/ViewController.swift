@@ -26,9 +26,9 @@ class ViewController: UIViewController {
                     
                     if let listOfDays = (responseObject as AnyObject)["list"] as? [AnyObject] {
                         if let tomorrow = listOfDays[0] as? [String:AnyObject] {
-                            if let tomorrowsWeather = tomorrow["weather"] as? [AnyObject] {
+                            if let tomorrowsWeather = tomorrow["temp"] as? [AnyObject] {
                                 if let firstWeatherOfDay = tomorrowsWeather[0] as? [String:AnyObject] {
-                                    if let forecast = firstWeatherOfDay ["description"] as? String {
+                                    if let forecast = firstWeatherOfDay ["max"] as? String {
                                         self.forecastLabel.text = forecast
                                     }
                                 }

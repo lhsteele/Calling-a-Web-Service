@@ -21,6 +21,7 @@
 		EF42EFAA1DFD0D91001A70BA /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = EF42EFA31DFD0D91001A70BA /* AFURLResponseSerialization.m */; };
 		EF42EFAB1DFD0D91001A70BA /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF42EFA51DFD0D91001A70BA /* AFURLSessionManager.m */; };
 		EF72BDFE1E00AC93009E38EC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF72BDFD1E00AC93009E38EC /* Default-568h@2x.png */; };
+		EF72BE001E010723009E38EC /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF72BDFF1E010723009E38EC /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		EF42EFA51DFD0D91001A70BA /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		EF72BDFC1DFF5C05009E38EC /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
 		EF72BDFD1E00AC93009E38EC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EF72BDFF1E010723009E38EC /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = "../../../../Downloads/SwiftyJSON-master/Source/SwiftyJSON.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		EF42EF691DFA1AB9001A70BA /* Web Service Example */ = {
 			isa = PBXGroup;
 			children = (
+				EF72BDFF1E010723009E38EC /* SwiftyJSON.swift */,
 				EF42EF6A1DFA1AB9001A70BA /* AppDelegate.swift */,
 				EF42EF6C1DFA1AB9001A70BA /* ViewController.swift */,
 				EF42EF6E1DFA1AB9001A70BA /* Main.storyboard */,
@@ -311,6 +314,7 @@
 				EF42EF6D1DFA1AB9001A70BA /* ViewController.swift in Sources */,
 				EF42EFA91DFD0D91001A70BA /* AFURLRequestSerialization.m in Sources */,
 				EF42EFA71DFD0D91001A70BA /* AFNetworkReachabilityManager.m in Sources */,
+				EF72BE001E010723009E38EC /* SwiftyJSON.swift in Sources */,
 				EF42EFAA1DFD0D91001A70BA /* AFURLResponseSerialization.m in Sources */,
 				EF42EF6B1DFA1AB9001A70BA /* AppDelegate.swift in Sources */,
 			);
