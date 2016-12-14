@@ -8,7 +8,11 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
+    
+    
     
     @IBOutlet weak var forecastLabel: UILabel!
 
@@ -21,21 +25,34 @@ class ViewController: UIViewController {
             parameters: nil,
             progress: nil,
             success: { (operation: URLSessionDataTask, responseObject: Any?) in
+                
+        let json = JSON(responseObject)
+                if let forecast = json["list"][0]["weather"][0]["description"].string {
+                    self.forecastLabel.text = forecast
+                }
+                
+                
+                /*
                 if let responseObject = responseObject {
                     print("Response: " + (responseObject as AnyObject).description)
                     
                     if let listOfDays = (responseObject as AnyObject)["list"] as? [AnyObject] {
                         if let tomorrow = listOfDays[0] as? [String:AnyObject] {
-                            if let tomorrowsWeather = tomorrow["weather"] as? [AnyObject] {
+                            if let tomorrowsWeather = tomorrow["temp"] as? [AnyObject] {
                                 if let firstWeatherOfDay = tomorrowsWeather[0] as? [String:AnyObject] {
-                                    if let forecast = firstWeatherOfDay ["description"] as? String {
+                                    if let forecast = firstWeatherOfDay ["max"] as? String {
                                         self.forecastLabel.text = forecast
                                     }
                                 }
                             }
+ 
                         }
+ 
                     }
+ 
                 }
+ 
+ */
             
         }) { (operation: URLSessionDataTask?, error: Error) in
             print("Error: " + error.localizedDescription)
