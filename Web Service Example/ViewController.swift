@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         
         let manager = AFHTTPSessionManager()
         
-        manager.get("http://api.openweathermap.org/data/2.5/forecast/daily?q=London&mode=json&units=metric&cnt=1&appid=7b8ddd009f73a79dd0de6fdfa101ac20",
+        manager.get("http://api.openweathermap.org/data/2.5/forecast/daily?q=SanFrancisco&mode=json&units=metric&cnt=1&appid=7b8ddd009f73a79dd0de6fdfa101ac20",
             parameters: nil,
             progress: nil,
             success: { (operation: URLSessionDataTask, responseObject: Any?) in
@@ -30,9 +30,9 @@ class ViewController: UIViewController {
                 if let forecast = json["list"][0]["weather"][0]["description"].string {
                     self.forecastLabel.text = forecast
                 }
+         
                 
-                
-                /*
+          /*
                 if let responseObject = responseObject {
                     print("Response: " + (responseObject as AnyObject).description)
                     
