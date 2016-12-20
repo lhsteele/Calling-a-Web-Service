@@ -19,25 +19,48 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.forecastLabel.text = ""
+        
+        let activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        view.addSubview(activityIndicatorView)
+        activityIndicatorView.center = view.center
+        activityIndicatorView.startAnimating()
+        
+        
+        
+        
         let manager = AFHTTPSessionManager()
         
         manager.get("http://api.openweathermap.org/data/2.5/forecast/daily?q=SanFrancisco&mode=json&units=metric&cnt=1&appid=7b8ddd009f73a79dd0de6fdfa101ac20",
             parameters: nil,
             progress: nil,
             success: { (operation: URLSessionDataTask, responseObject: Any?) in
-                
+                if let responseObject = responseObject {
+                    print("Reponse: " + (responseObject as AnyObject).description)
+                    let json = JSON(responseObject)
+                    if let forecast = json["list"][0]["weather"][0]["description"].string {
+                        self.forecastLabel.text = forecast
+                    }
+                    activityIndicatorView.removeFromSuperview()
+                }
+        }) { (operation: URLSessionDataTask?, error: Error) in
+            print("Error: " + error.localizedDescription)
+        }
+    }
+}
+            
 // between () always need to have 2 variables. 2nd variable (what response we get from the website) will be what we pass into JSON class.
                 
-        let json = JSON(responseObject)
-                if let forecast = json["list"][0]["temp"]["max"].double {
-                    self.forecastLabel.text = String(forecast)
+        /*let json = JSON(responseObject)
+                if let forecast = json["list"][0]["weather"][0]["description"].string {
+                    self.forecastLabel.text = forecast
                     
-                    self.updateBackgroundColor(forecast: forecast)
+                    //self.updateBackgroundColor(forecast: forecast)
                 }
          
          
-
-                
+*/
+    
           /*
                 if let responseObject = responseObject {
                     print("Response: " + (responseObject as AnyObject).description)
@@ -59,7 +82,9 @@ class ViewController: UIViewController {
                 }
  
  */
-            
+ 
+    
+/*
         }) { (operation: URLSessionDataTask?, error: Error) in
             print("Error: " + error.localizedDescription)
         
@@ -73,7 +98,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    
+    /*
     func updateBackgroundColor(forecast: Double) {
         if forecast <= 5 {
             self.view.backgroundColor = UIColor.blue
@@ -84,6 +109,5 @@ class ViewController: UIViewController {
         }
     }
     
-    
-}
-
+ 
+*/*/
