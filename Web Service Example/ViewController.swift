@@ -26,11 +26,17 @@ class ViewController: UIViewController {
             progress: nil,
             success: { (operation: URLSessionDataTask, responseObject: Any?) in
                 
+// between () always need to have 2 variables. 2nd variable (what response we get from the website) will be what we pass into JSON class.
+                
         let json = JSON(responseObject)
                 if let forecast = json["list"][0]["temp"]["max"].double {
                     self.forecastLabel.text = String(forecast)
+                    
+                    self.updateBackgroundColor(forecast: forecast)
                 }
          
+         
+
                 
           /*
                 if let responseObject = responseObject {
@@ -68,16 +74,16 @@ class ViewController: UIViewController {
     }
 
     
-    /*func updateBackgroundColor(json: JSON) {
-        if forecast <=5 {
+    func updateBackgroundColor(forecast: Double) {
+        if forecast <= 5 {
             self.view.backgroundColor = UIColor.blue
-        } else if forecast >=5 && <=15 {
+        } else if forecast >= 5 && forecast <= 15 {
             self.view.backgroundColor = UIColor.yellow
-        } else forecast >15 {
+        } else {
             self.view.backgroundColor = UIColor.red
         }
     }
- */   
+    
     
 }
 
