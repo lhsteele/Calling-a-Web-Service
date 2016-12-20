@@ -27,8 +27,8 @@ class ViewController: UIViewController {
             success: { (operation: URLSessionDataTask, responseObject: Any?) in
                 
         let json = JSON(responseObject)
-                if let forecast = json["list"][0]["weather"][0]["description"].string {
-                    self.forecastLabel.text = forecast
+                if let forecast = json["list"][0]["temp"]["max"].double {
+                    self.forecastLabel.text = String(forecast)
                 }
          
                 
@@ -67,6 +67,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
+    /*func updateBackgroundColor(json: JSON) {
+        if forecast <=5 {
+            self.view.backgroundColor = UIColor.blue
+        } else if forecast >=5 && <=15 {
+            self.view.backgroundColor = UIColor.yellow
+        } else forecast >15 {
+            self.view.backgroundColor = UIColor.red
+        }
+    }
+ */   
+    
 }
 
